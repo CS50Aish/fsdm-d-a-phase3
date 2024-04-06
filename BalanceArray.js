@@ -13,6 +13,7 @@ function isBalancedArray(arr){
     }
 
     let halfsum = totalSum/2;
+    console.log("Half Sum: " +halfsum);
     let set = new Set();
     let currentSum = 0;
 
