@@ -27,9 +27,13 @@ function isBalancedArray(arr){
             if(remainigSet.size === remainingElements.length){
                 return true; // Both halves are balanced and have unique elements 
             }
+            else{
+                return false;  // Second half has duplicates
+            }
         }
+        return false;
     }
 }
 
 const array = [1, 2, 3, 4, 5, 6]
-isBalancedArray(array);
+console.log(array+ " is balanced " +isBalancedArray(array));
